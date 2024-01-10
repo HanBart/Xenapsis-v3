@@ -1,0 +1,62 @@
+@font-face {
+    font-family: Lemon;
+    src: url(LEMONMILK-Regular.otf);
+}
+
+:root {
+    --primary-color: rgb(70, 70, 70);
+    --secondary-color: rgb(54, 54, 54);
+    --accent-color: rgb(54, 54, 54);
+}
+
+.normal-accent {
+    --accent-color: #6A00FF;
+    
+}
+
+.pink-accent {
+    --accent-color: #ff00ff;
+}
+
+html {
+    background-color: var(--primary-color);
+}
+.navbutton {
+    margin: 0;
+    padding: 0;
+}
+
+.navtext {
+    width: 20px;
+    height: 20px;
+    font-family: Lemon;
+    color: var(--accent-color);
+}
+
+li {
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--secondary-color);
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    margin: 0;
+    height: 50px;
+    align-items: center; 
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.navimg {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
