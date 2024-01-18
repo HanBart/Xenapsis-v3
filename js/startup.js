@@ -12,7 +12,7 @@ window.onload = function() {
     if (favicon) {
      console.log(favicon);
     } else {
-        icon.href = "imgs/navicons/favicon.png"
+        icon.href = "imgs/favicon.png"
     }
     if (title) {
      console.log(title);

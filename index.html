@@ -8,19 +8,23 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="icon" type="image.png" href="/imgs/navicons/favicon.png">
+        <link rel="icon" type="image.png" href="imgs/navicons/favicon.png">
         <script src="js/startup.js"></script>
+        <script src="js/aboutblank.js"></script>
+        <script src="js/search.js" defer></script>
     </head>
     <body>
-        <nav>
-            <ul class="navbar">
-                <li class="navbutton"><img class="navimg" src="imgs/navicons/favicon.png"><p1 class="navtext"> Xenapsis</p1></li>
-                <li class="navbutton"><img class="navimg" src="imgs/navicons/home.png"><p1 class="navtext"> home</p1></li>
-                <li class="navbutton"><img class="navimg" src="imgs/navicons/games.png"><p1 class="navtext"> Games</p1></li>
-                <li class="navbutton"><img class="navimg" src="imgs/navicons/apps.png"><p1 class="navtext"> apps</p1></li>
-                <li class="navbutton"><img class="navimg" src="imgs/navicons/proxy.png"><p1 class="navtext"> Proxy</p1></li>
-                <li class="navbutton"><img class="navimg"  src="imgs/navicons/blogs.png"><p1 class="navtext"> Blog</p1></li>
-            </ul>
+        <nav id="navbar">
+            <script src="js/navbar.js"></script>
         </nav>
+        <br>
+        <br>
+        <br>
+        
+        <div class="welcome">
+            <p1 style="font-size: 40px; color: var(--accent-color); font-family: montserrat, sans-serif;">Welcome To Xenapsis</p1>
+            <p1 class="version" style="font-size: 40px; color: var(--accent-color); font-family: montserrat, sans-serif;">Version 3!</p1>
+            <div class="blank"><a onclick="about_blank()"><button class="button"style="font-size: 20px; font-family: montserrat, sans-serif; cursor: pointer;">Open In About:Blank</button></a></div>
+        </div>
     </body>
 </html>
