@@ -85,7 +85,7 @@
     width: 100%;
     transform: translateX(-50%);
     display: none;
-    transition: 0.2s;
+    transition: 500ms;
     z-index: 3;
 }
 
@@ -110,8 +110,12 @@
     background: var(--primary-color);
 }
 
+
+.menu-open {
+   transition: 500ms;
+   display: none;
+}
 .menu-open {
     display: block;
-    opacity: 1;
 }
 
