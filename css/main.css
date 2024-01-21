@@ -8,6 +8,11 @@
     src: url(font.ttf);
 }
 
+@font-face {
+    font-family: nexa;
+    src: url(nexa.ttf);
+}
+
 * {
     text-decoration: none;
     margin: 0;
@@ -17,6 +22,37 @@
     --primary-color: rgb(70, 70, 70);
     --secondary-color: rgb(54, 54, 54);
     --accent-color: rgb(54, 54, 54);
+    --offset-color: rgb(180, 180, 180);
+}
+
+.dark-theme {
+    --primary-color: rgb(70, 70, 70);
+    --secondary-color: rgb(54, 54, 54);
+    --offset-color: rgb(180, 180, 180);
+}
+
+.light-theme {
+    --primary-color: rgb(207, 205, 205);
+    --secondary-color: rgb(216, 216, 216);
+    --offset-color: #6e6d6d;
+}
+
+.Moon-theme {
+    --primary-color: rgb(22, 22, 22);
+    --secondary-color: rgb(139, 139, 139);
+    --offset-color: rgb(255, 255, 255);
+}
+
+.mariana-theme {
+    --primary-color: rgb(24, 24, 24);
+    --secondary-color: rgb(19, 19, 19);
+    --offset-color: rgb(255, 255, 255);
+}
+
+.ocean-theme {
+    --primary-color: rgb(0, 68, 255);
+    --secondary-color: rgb(0, 110, 255);
+    --offset-color: rgb(255, 255, 255);
 }
 
 ::-webkit-scrollbar {
@@ -47,6 +83,36 @@
     --brighter-accent-color: #e100ff;
 }
 
+.red-accent {
+    --accent-color: #ff0000;
+    --brighter-accent-color: #ff0000;
+}
+
+.blue-accent {
+    --accent-color: #0011ff;
+    --brighter-accent-color: #0044ff;
+}
+
+.yellow-accent {
+    --accent-color: #fbff00;
+    --brighter-accent-color: #c8ff00;
+}
+
+.pink-accent {
+    --accent-color: #cc00ff;
+    --brighter-accent-color: #ff00d4;
+}
+
+.green-accent {
+    --accent-color: #33ff00;
+    --brighter-accent-color: #00ff40;
+}
+
+.black-accent {
+    --accent-color: #000000;
+    --brighter-accent-color: #313131;
+}
+
 body {
     height: 100vh;
 }
@@ -55,7 +121,7 @@ body {
     --accent-color: #ff00ff;
 }
 
-html {
+body {
     background-color: var(--primary-color);
 }
 .navbutton {
@@ -153,7 +219,7 @@ li {
 }
 
 .navbutton:hover .navimg {
-    filter: brightness(200%);
+    filter:invert(30%)
 }
 
 .welcome {
@@ -227,7 +293,7 @@ img {
 
 .box {
     font-family: Lemon;
-    background: rgb(70, 70, 70);
+    background: var(--secondary-color);
     font-size: 15px;
     position: relative;
     color: #fff;
@@ -490,7 +556,7 @@ img {
     border-radius: 10px;
     transition: 500ms;
     filter: drop-shadow(0 0 0.5rem black);
-    font-family: font;
+    font-family: nexa;
     color: var(--accent-color);
     opacity: 0;
     z-index: 3;
@@ -499,6 +565,10 @@ img {
 .gamename {
     font-family: Lemon;
     color: var(--accent-color);
+}
+
+.gameimg {
+    border-radius: 5px;
 }
 
 
