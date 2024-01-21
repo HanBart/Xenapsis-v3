@@ -1,10 +1,7 @@
 window.onload = function() {
+
     var accent = localStorage.getItem("accent")
     var theme = localStorage.getItem("theme")
-
-    console.log(accent)
-    console.log(theme)
-
     
     if (accent) {
         console.log(accent)
