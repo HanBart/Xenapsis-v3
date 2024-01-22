@@ -1,7 +1,6 @@
 window.onload = function() {
     var icon = document.querySelector("link[rel='icon']");
     icon.type = "image.png";
-    icon.rel = "icon";
     icon.href = localStorage.getItem("favicon");
     var favicon = localStorage.getItem("favicon");
     var title = localStorage.getItem("title")
@@ -15,6 +14,7 @@ window.onload = function() {
     var settings = document.getElementById('settings')
     console.log(accent)
     console.log(theme)
+
     if (favicon) {
      console.log(favicon);
     } else {

@@ -18,6 +18,7 @@
     margin: 0;
     padding: 0;
 }
+
 :root {
     --primary-color: rgb(70, 70, 70);
     --secondary-color: rgb(54, 54, 54);
@@ -406,6 +407,7 @@ img {
     border-radius: 0px 0px 20px 20px;
 }
 
+
 .gamebar {
     display: flex;
     justify-content:flex-end;
@@ -438,6 +440,16 @@ img {
     flex-direction: row;
     overflow-x: scroll;
     gap: 1.5rem;
+    height: 200px;
+    position: relative;
+    align-items: center;
+}
+
+.gamewrapper2 {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    gap: 5rem;
     height: 200px;
     position: relative;
     align-items: center;
