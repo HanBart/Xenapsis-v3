@@ -17,6 +17,7 @@
     text-decoration: none;
     margin: 0;
     padding: 0;
+
 }
 
 :root {
@@ -407,6 +408,17 @@ img {
     border-radius: 0px 0px 20px 20px;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    gap: 3rem;
+    z-index: 1;
+}
+
 
 .gamebar {
     display: flex;
@@ -581,6 +593,10 @@ img {
 
 .gameimg {
     border-radius: 5px;
+}
+
+.viewall {
+    color: var(--accent-color);
 }
 
 
